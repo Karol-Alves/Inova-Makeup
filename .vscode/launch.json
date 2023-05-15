@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Inova Makeup",
-      "program": "d:/Inova Makeup/build/Debug/outDebug",
+      "cwd": "c:/Users/libor/OneDrive/Documentos/Codando/Inova-Makeup",
+      "program": "c:/Users/libor/OneDrive/Documentos/Codando/Inova-Makeup/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
