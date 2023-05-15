@@ -1,0 +1,74 @@
+:root {
+  --cor-primaria-texto: #835d38;
+  --cor-secundaria-texto: #997f3a;
+  --cor-terciaria-texto: #7b6836;
+  --cor-destaque: #d98a45;
+  --cor-listas: #45361d;
+  --cor-listas-hover: #876445;
+  --cor-footer: #332814;
+  --cor-fundo: #f4f4f4;
+
+  --fonte-primaria: "Nunito Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo);
+}
+
+body {
+  font-family: var(--fonte-primaria);
+}
+
+.cabecalho__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 2em 1em;
+  align-items: center;
+}
+
+.icones {
+  width: 34px;
+  height: 34px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #DDDDDD;
+    margin: 10px 0;
+}
+.cabecalho__container__itens {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 1em;
+}
+.cabecalho__container__itens a {
+  color: var(--cor-listas);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cabecalho__container__itens a:hover {
+  color: var(--cor-listas-hover);
+  font-size: 18px;
+}
+
+.banner1 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.banner2 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
