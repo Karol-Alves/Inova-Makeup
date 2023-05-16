@@ -25,14 +25,14 @@ body {
 
 .cabecalho__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1.5em 2em 1em;
   align-items: center;
 }
 
 .icones {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
 }
 
 hr {
@@ -138,6 +138,17 @@ hr {
 
 .rodape__container{
   background: linear-gradient(180deg, rgba(212, 161, 116, 0.31) 0%, #D4A174 100%);
+}
+
+.rodape__redes{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rodape__icon{
+  width: 34px;
+  height: 34px;
+  padding: 3em 0 0.5em;
 }
 
 .rodape__lista{
