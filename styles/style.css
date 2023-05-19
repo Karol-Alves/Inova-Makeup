@@ -4,7 +4,7 @@
   --cor-terciaria-texto: #7b6836;
   --cor-destaque: #d98a45;
   --cor-listas: #45361d;
-  --cor-listas-hover: #427522;
+  --cor-listas-hover: #751448;
   --cor-footer: #332814;
   --cor-fundo: #f4f4f4;
   --fonte-primaria: "Nunito Sans", sans-serif;
@@ -17,9 +17,10 @@
 
 body {
   font-family: var(--fonte-primaria);
+  background: linear-gradient(180deg, #F4F4F4 0%, #F4F0F0 21.35%, #F6D7D3 35.94%, #F6D7D3 66.15%, #F8B7AD 86.98%);
 }
 
-.cabecalho{
+.cabecalho {
   background-color: var(--cor-fundo);
 }
 
@@ -33,6 +34,11 @@ body {
 .icones {
   width: 30px;
   height: 30px;
+}
+
+.icon-marca{
+  width: 15%;
+  height: auto;
 }
 
 hr {
@@ -60,29 +66,23 @@ hr {
   color: var(--cor-listas-hover);
 }
 
-.apresentacao__container__banners {
-  background-color: #EDEAE7;
+#banner-ponteiro{
+  cursor: pointer;
 }
 
 .banner1 {
-  width: 70%;
+  width: 100%;
   height: auto;
-  max-width: 70%;
-  display: block;
-  cursor: pointer;
-  margin-left: auto;
+  padding-bottom: 2em;
 }
 
 .banner2 {
-  width: 70%;
+  width: 50%;
   height: auto;
-  max-width: 70%;
-  display: block;
-  margin: 0 auto;
+  margin-left: 20em;
 }
 
-.apresentacao__container__produtos{
-  background:  linear-gradient(180deg, #EDEAE7 40.1%, rgba(212, 161, 116, 0.45) 85.41%, rgba(212, 161, 116, 0.45) 85.42%);
+.apresentacao__container__produtos {
   padding-top: 2em;
 }
 
@@ -95,14 +95,14 @@ hr {
 
 }
 
-.lista__produtos{
+.lista__produtos {
   display: flex;
   justify-content: space-evenly;
   padding: 3em 2em 1em;
   flex-wrap: wrap;
 }
 
-.lista__produtos__itens{
+.lista__produtos__itens {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -112,46 +112,23 @@ hr {
 }
 
 .lista__produtos__itens img {
-  max-width: 90%;
-  max-height: 150px;
+  max-width: 100%;
   padding-bottom: 2.5em;
 }
 
-.botao-preco{
-  position: absolute;
-  width: 73px;
-  height: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10px;
-  background: #A63E37;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400;
-  color: #FBFBFB;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.rodape__container{
-  background: linear-gradient(180deg, rgba(212, 161, 116, 0.31) 0%, #D4A174 100%);
-}
-
-.rodape__redes{
+.rodape__redes {
   display: flex;
   justify-content: space-evenly;
 }
 
-.rodape__icon{
+.rodape__icon {
   width: 34px;
   height: 34px;
   padding: 3em 0 0.5em;
 }
 
-.rodape__lista{
+.rodape__lista {
   display: flex;
   justify-content: space-evenly;
   text-transform: uppercase;
@@ -159,17 +136,23 @@ hr {
   font-size: 16px;
 }
 
-.rodape__lista a{
+.rodape__lista a {
   color: #45361D;
   text-decoration: none;
 }
 
-.rodape__lista a:hover{
+.rodape__lista a:hover {
   color: #655539;
 }
 
-.rodape__container__texto{
+.rodape__container__texto {
   text-align: center;
   color: #45361D;
   padding: 1em;
+}
+
+@media screen  and (max-width: 768px){
+
+
+  
 }
