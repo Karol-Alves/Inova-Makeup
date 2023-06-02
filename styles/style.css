@@ -7,20 +7,15 @@
   --fonte-primaria: "Nunito Sans", sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
+#body {
   font-family: var(--fonte-primaria);
   background: var(--cor-fundo);
 }
 
 .cabecalho__container {
   display: flex;
-  justify-content: space-evenly;
-  padding: 0.3em 2em 1em;
+  justify-content: space-between;
+  padding: 0.3em 4em 0;
   align-items: center;
 }
 
@@ -29,14 +24,14 @@ body {
   height: 30px;
 }
 
-.icon-marca{
+.icon-marca {
   width: 15%;
   height: auto;
 }
 
-hr {
+#cabecalho-divisao{
   border: none;
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #515050;
   padding: 0.3em 0;
 }
 
@@ -45,7 +40,6 @@ hr {
   justify-content: space-around;
   text-transform: uppercase;
   list-style: none;
-  padding: 1em;
 }
 
 .cabecalho__container__itens a {
@@ -59,7 +53,7 @@ hr {
   font-weight: 700;
 }
 
-#banner-ponteiro{
+#banner-ponteiro {
   cursor: pointer;
 }
 
@@ -104,23 +98,23 @@ hr {
   display: block;
 }
 
-.titulo__peles{
+.titulo__peles {
   font-weight: 200;
   font-size: 40px;
   color: var(--cor-titulo);
   text-transform: uppercase;
   text-align: center;
-  margin:1em 0 0.5em;
+  margin: 1em 0 0.5em;
 }
 
-.texto__peles{
+.texto__peles {
   font-size: 16px;
   font-weight: 400;
   color: var(--cor-texto);
   text-align: center;
 }
 
-.imagens-peles{
+.imagens-peles {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -158,8 +152,4 @@ hr {
   padding: 1em;
 }
 
-@media screen  and (max-width: 768px){
-
-
-  
-}
+@media screen and (max-width: 768px) {}
