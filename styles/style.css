@@ -29,7 +29,7 @@
   height: auto;
 }
 
-#cabecalho-divisao{
+#cabecalho-divisao {
   border: none;
   border-top: 1px solid #515050;
   padding: 0.3em 0;
@@ -130,7 +130,7 @@
 .rodape__icon {
   width: 34px;
   height: 34px;
-  padding: 3em 0 0.5em;
+  margin: 3em;
 }
 
 .rodape__lista {
@@ -152,4 +152,65 @@
   padding: 1em;
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+  }
+
+  .cabecalho__container__itens {
+    display: none;
+  }
+
+  #cabecalho-divisao {
+    display: none;
+  }
+
+  .lista__produtos {
+    display: block;
+    padding: 0.5em;
+  }
+
+  .lista__produtos__itens {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .lista__produtos__itens img {
+    padding: 1em 0em;
+  }
+
+  .imagens-peles {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagens-peles a {
+    padding: 1em;
+  }
+
+  .texto__peles {
+    font-size: 12px;
+  }
+
+  .rodape__lista {
+    display: block;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .rodape__lista li {
+    padding: 0.5em;
+  }
+
+  .rodape__container__texto {
+    padding: 0.2em;
+  }
+}
