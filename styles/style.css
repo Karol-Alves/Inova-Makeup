@@ -152,7 +152,23 @@
   padding: 1em;
 }
 
+.slide{
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .slide{
+    display: none;
+  }
+  
+  .mobile{
+    display: block;
+  }
+
   .cabecalho__container {
     display: flex;
     justify-content: space-between;
