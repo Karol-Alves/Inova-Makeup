@@ -4,7 +4,7 @@
   --cor-listas: #4A3E3E;
   --cor-footer: #594B4B;
   --cor-fundo: linear-gradient(180deg, #F4F4F4 0%, #F4F0F0 21.35%, #F6D7D3 35.94%, #F6D7D3 66.15%, #F8B7AD 86.98%);
-  --fonte-primaria: "Nunito Sans", sans-serif; 
+  --fonte-primaria: "Nunito Sans", sans-serif;
   --cor-modal: linear-gradiente(180deg, #FBCBC3 50%, #F9A89B 50%);
 }
 
@@ -20,13 +20,13 @@
   align-items: center;
 }
 
-.icone-conta{
+.icone-conta {
   justify-content: space-between;
   display: flex;
   justify-items: center;
 }
 
-.icone-conta button{
+.icone-conta button {
   margin: 0;
   border: 0;
   background-color: 0;
@@ -38,7 +38,7 @@
   height: 30px;
 }
 
-#icone-minha-conta{
+#icone-minha-conta {
   color: var(--cor-listas);
   font-size: 16px;
   text-align: center;
@@ -54,7 +54,6 @@
 #cabecalho-divisao {
   border: none;
   border-top: 1px solid #515050;
-  padding: 0.3em 0;
 }
 
 .cabecalho__container__itens {
@@ -174,26 +173,25 @@
   padding: 1em;
 }
 
-.slide{
+.slide {
   display: block;
 }
 
-.mobile{
+.mobile {
   display: none;
 }
 
 /*Formulario*/
 
-.form-control{
+.form-control {}
 
-}
-.modal-content{
+.modal-content {
   background-color: #F4F0F0;
   border-bottom: 0;
   font-family: var(--fonte-primaria);
 }
 
-.modal-title{
+.modal-title {
   font-family: var(--fonte-primaria);
   color: var(--cor-listas);
   text-transform: uppercase;
@@ -201,21 +199,21 @@
   font-weight: 600;
 }
 
-.form-group{
+.form-group {
   padding: 1em;
 }
 
-.modal-header{
- justify-content: center;
- border-bottom: 0;
+.modal-header {
+  justify-content: center;
+  border-bottom: 0;
 }
 
-.modal-footer{
+.modal-footer {
   border-top: 0;
   justify-content: center;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #E7CDC9;
   color: var(--cor-listas);
   font-style: italic;
@@ -237,13 +235,13 @@
   --bs-btn-disabled-border-color: transparent;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: #E7CDC9;
   color: var(--cor-listas);
   border-color: #E7CDC9;
 }
 
-.btn-primary:active{
+.btn-primary:active {
   border-color: #E7CDC9;
   background-color: #E7CDC9;
   color: var(--cor-listas);
@@ -253,10 +251,10 @@
 .btn-primary.active,
 .btn-primary:focus {
   --bs-btn-active-bg: #E7CDC9;
-  --bs-btn-active-border-color: #E7CDC9; 
+  --bs-btn-active-border-color: #E7CDC9;
 }
 
-.form-control{
+.form-control {
   background-color: #E7CDC9;
   font-family: var(--fonte-primaria);
   border: 0;
@@ -264,22 +262,22 @@
 
 
 .form-control::placeholder {
-  color: var(--cor-listas); 
-  font-style: italic; 
+  color: var(--cor-listas);
+  font-style: italic;
 }
 
 
 .form-control:focus {
-  background-color: #E7CDC9; 
+  background-color: #E7CDC9;
   outline: none;
 }
 
 @media screen and (max-width: 768px) {
-  .slide{
+  .slide {
     display: none;
   }
-  
-  .mobile{
+
+  .mobile {
     display: block;
   }
 
