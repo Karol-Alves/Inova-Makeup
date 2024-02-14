@@ -4,7 +4,8 @@
   --cor-listas: #4A3E3E;
   --cor-footer: #594B4B;
   --cor-fundo: linear-gradient(180deg, #F4F4F4 0%, #F4F0F0 21.35%, #F6D7D3 35.94%, #F6D7D3 66.15%, #F8B7AD 86.98%);
-  --fonte-primaria: "Nunito Sans", sans-serif;
+  --fonte-primaria: "Nunito Sans", sans-serif; 
+  --cor-modal: linear-gradiente(180deg, #FBCBC3 50%, #F9A89B 50%);
 }
 
 #body {
@@ -19,13 +20,34 @@
   align-items: center;
 }
 
+.icone-conta{
+  justify-content: space-between;
+  display: flex;
+  justify-items: center;
+}
+
+.icone-conta button{
+  margin: 0;
+  border: 0;
+  background-color: 0;
+  padding: 0;
+}
+
 .icones {
   width: 30px;
   height: 30px;
 }
 
+#icone-minha-conta{
+  color: var(--cor-listas);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+}
+
 .icon-marca {
-  width: 15%;
+  width: 10%;
   height: auto;
 }
 
@@ -158,6 +180,98 @@
 
 .mobile{
   display: none;
+}
+
+/*Formulario*/
+
+.form-control{
+
+}
+.modal-content{
+  background-color: #F4F0F0;
+  border-bottom: 0;
+  font-family: var(--fonte-primaria);
+}
+
+.modal-title{
+  font-family: var(--fonte-primaria);
+  color: var(--cor-listas);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-group{
+  padding: 1em;
+}
+
+.modal-header{
+ justify-content: center;
+ border-bottom: 0;
+}
+
+.modal-footer{
+  border-top: 0;
+  justify-content: center;
+}
+
+.btn-primary{
+  background-color: #E7CDC9;
+  color: var(--cor-listas);
+  font-style: italic;
+  border-color: #E7CDC9;
+  font-weight: 600;
+  --bs-btn-color: inherit;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: inherit;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: transparent;
+  --bs-btn-active-color: inherit;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: inherit;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: transparent;
+}
+
+.btn-primary:hover{
+  background-color: #E7CDC9;
+  color: var(--cor-listas);
+  border-color: #E7CDC9;
+}
+
+.btn-primary:active{
+  border-color: #E7CDC9;
+  background-color: #E7CDC9;
+  color: var(--cor-listas);
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus {
+  --bs-btn-active-bg: #E7CDC9;
+  --bs-btn-active-border-color: #E7CDC9; 
+}
+
+.form-control{
+  background-color: #E7CDC9;
+  font-family: var(--fonte-primaria);
+  border: 0;
+}
+
+
+.form-control::placeholder {
+  color: var(--cor-listas); 
+  font-style: italic; 
+}
+
+
+.form-control:focus {
+  background-color: #E7CDC9; 
+  outline: none;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,176 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inova Makeup</title>
-  <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,900&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inova Makeup</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
 
-<body id="body">
-  <header class="cabecalho">
-    <nav class="cabecalho__container">
-      <a href="#"><img src="img/person 1.png" class="icones" alt="Minha conta" /></a>
-      <img src="img/wepik-organic-logo-20230519184815kCJF.png" class="icon-marca" alt="Logotipo Inova Makeup" />
-      <a href="#"><img src="img/sacolas-de-compras 1.png" class="icones" alt="Sacola de compras" /></a>
-    </nav>
-    <hr id="cabecalho-divisao">
-    <ul class="cabecalho__container__itens">
-      <li><a href="#">Pele</a></li>
-      <li><a href="#">Olhos</a></li>
-      <li><a href="#">Acessórios</a></li>
-      <li><a href="#">Lançamentos</a></li>
-      <li><a href="#">Lábios</a></li>
-    </ul>
-  </header>
-  <main class="apresentacao__container">
-    <!-- Inicio do carrousel Desktop-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="#"><img src="img/3.png" class="d-block w-100" alt="Cupom Bem-vindo Inova10"></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img src="img/2.png" class="d-block w-100" alt="Inova Makeup Store"></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img src="img/1.png" class="d-block w-100" alt="Batom matte 100% vegano"></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img src="img/4.png" class="d-block w-100" alt="Frete grátis"></a>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--Fim do carrousel Desktop-->
-
-     <!-- Inicio do carrousel Mobile-->
-     <div id="carouselExample" class="carousel slide mobile">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="#"><img  src="img/Banner 3.png" class="d-block w-100" alt="Cupom Bem-vindo Inova10"></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img  src="img/Banner 2.png" class="d-block w-100" alt="Inova Makeup Store"></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img  src="img/Banner 1.png" class="d-block w-100" alt="Batom matte 100% vegano"></a>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img  src="img/Banner 4.png" class="d-block w-100" alt="Frete grátis"></a>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--Fim do carrousel Mobile-->
-
-    <div class="apresentacao__container__produtos">
-      <h2 class="titulo__produtos">Confira nossos produtos</h2>
-      <ul class="lista__produtos">
-        <li class="lista__produtos__itens">
-          <a href="#">
-            <img src="img/Frame 8.png" alt="Corretivo líquido">
-          </a>
-        </li>
-        <li class="lista__produtos__itens">
-          <a href="#">
-            <img src="img/Frame 10.png" alt="Base">
-          </a>
-        </li>
-        <li class="lista__produtos__itens">
-          <a href="#">
-            <img src="img/Frame 9.png" alt="Paleta de sombras">
-          </a>
-        </li>
-        <li class="lista__produtos__itens">
-          <a href="#">
-            <img src="img/Frame 11.png" alt="Batom em bala">
-          </a>
-        </li>
-        <li class="lista__produtos__itens">
-          <a href="#">
-            <img src="img/Frame 13.png" alt="Pincel língua de gato">
-          </a>
-        </li>
+  <body id="body">
+    <header class="cabecalho">
+      <nav class="cabecalho__container">
+        <div class="icone-conta">
+        <button onclick="abrirModal()" href="#" id="icone-minha-conta"><img src="img/person 1.png"
+            class="icones" alt="Minha conta" /></button>
+          </div>
+            <!--Modal-->
+            <div id="modal" class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Crie sua conta</h5>
+                  </div>
+                  <div class="modal-body">
+                  <!--Formulario-->
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                  </div>
+                  <!--Fim do Formulario-->
+                  </div>
+                  <div class="modal-footer">
+                    <button onclick="fecharModal()" type="button" class="btn btn-primary">Avançar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fim do Modal-->
+        <img src="img/wepik-organic-logo-20230519184815kCJF.png"
+          class="icon-marca" alt="Logotipo Inova Makeup" />
+        <a href="#"><img src="img/sacolas-de-compras 1.png" class="icones"
+            alt="Sacola de compras" /></a>
+      </nav>
+      <hr id="cabecalho-divisao">
+      <ul class="cabecalho__container__itens">
+        <li><a href="#">Pele</a></li>
+        <li><a href="#">Olhos</a></li>
+        <li><a href="#">Acessórios</a></li>
+        <li><a href="#">Lançamentos</a></li>
+        <li><a href="#">Lábios</a></li>
       </ul>
-    </div>
-    <div class="apresentacao__container__peles">
-      <h2 class="titulo__peles">Qual combina com você?</h2>
-      <p class="texto__peles">Encontre as melhores maquiagens para o seu tom de pele</p>
-      <div class="imagens-peles">
-        <a href="#"><img class="peles" src="img/Rectangle 57.png" alt="Tom claro"></a>
-        <a href="#"><img class="peles" src="img/Rectangle 58.png" alt="Tom médio claro"></a>
-        <a href="#"><img class="peles" src="img/Rectangle 59.png" alt="Tom médio"></a>
-        <a href="#"><img class="peles" src="img/Rectangle 60.png" alt="Tom escuro"></a>
+    </header>
+    <main class="apresentacao__container">
+      <!-- Inicio do carrousel Desktop-->
+      <div id="carouselExampleIndicators" class="carousel slide"
+        data-bs-ride="carousel" data-interval="2000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#"><img src="img/3.png" class="d-block w-100"
+                alt="Cupom Bem-vindo Inova10"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="img/2.png" class="d-block w-100"
+                alt="Inova Makeup Store"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="img/1.png" class="d-block w-100"
+                alt="Batom matte 100% vegano"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="img/4.png" class="d-block w-100"
+                alt="Frete grátis"></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
+      <!--Fim do carrousel Desktop-->
 
-  </main>
-  <footer class="rodape__container">
+      <!-- Inicio do carrousel Mobile-->
+      <div id="carouselExample" class="carousel slide mobile">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#"><img src="img/Banner 3.png" class="d-block w-100"
+                alt="Cupom Bem-vindo Inova10"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="img/Banner 2.png" class="d-block w-100"
+                alt="Inova Makeup Store"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="img/Banner 1.png" class="d-block w-100"
+                alt="Batom matte 100% vegano"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="img/Banner 4.png" class="d-block w-100"
+                alt="Frete grátis"></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Fim do carrousel Mobile-->
 
-    <div class="rodape__redes">
-      <img src="img/facebook.png" class="rodape__icon" alt="Facebook da Inova Makeup">
-      <img src="img/instagram.png" class="rodape__icon" alt="Instagram da Inova Makeup">
-      <img src="img/tiktok.png" class="rodape__icon" alt="Tiktok da Inova Makeup">
-    </div>
+      <div class="apresentacao__container__produtos">
+        <h2 class="titulo__produtos">Confira nossos produtos</h2>
+        <ul class="lista__produtos">
+          <li class="lista__produtos__itens">
+            <a href="#">
+              <img src="img/Frame 8.png" alt="Corretivo líquido">
+            </a>
+          </li>
+          <li class="lista__produtos__itens">
+            <a href="#">
+              <img src="img/Frame 10.png" alt="Base">
+            </a>
+          </li>
+          <li class="lista__produtos__itens">
+            <a href="#">
+              <img src="img/Frame 9.png" alt="Paleta de sombras">
+            </a>
+          </li>
+          <li class="lista__produtos__itens">
+            <a href="#">
+              <img src="img/Frame 11.png" alt="Batom em bala">
+            </a>
+          </li>
+          <li class="lista__produtos__itens">
+            <a href="#">
+              <img src="img/Frame 13.png" alt="Pincel língua de gato">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="apresentacao__container__peles">
+        <h2 class="titulo__peles">Qual combina com você?</h2>
+        <p class="texto__peles">Encontre as melhores maquiagens para o seu tom
+          de pele</p>
+        <div class="imagens-peles">
+          <a href="#"><img class="peles" src="img/Rectangle 57.png"
+              alt="Tom claro"></a>
+          <a href="#"><img class="peles" src="img/Rectangle 58.png"
+              alt="Tom médio claro"></a>
+          <a href="#"><img class="peles" src="img/Rectangle 59.png"
+              alt="Tom médio"></a>
+          <a href="#"><img class="peles" src="img/Rectangle 60.png"
+              alt="Tom escuro"></a>
+        </div>
+      </div>
 
-    <ul class="rodape__lista">
-      <li><a href="#">Termos e condições</a></li>
-      <li><a href="#">Ajuda</a></li>
-      <li><a href="#">Fale Conosco</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Política de Privacidade</a></li>
-      <li><a href="#">Formas de Pagamento</a></li>
-    </ul>
+    </main>
+    <footer class="rodape__container">
 
-    <p class="rodape__container__texto">
-      © 2023 Inova Makeup. Todos os direitos reservados
-    </p>
-    <p class="rodape__container__texto">
-      Site desenvolvido com intuito de aprimorar conhecimentos!
-    </p>
-    <p class="rodape__container__texto">Images by Freepik</p>
-  </footer>
+      <div class="rodape__redes">
+        <img src="img/facebook.png" class="rodape__icon"
+          alt="Facebook da Inova Makeup">
+        <img src="img/instagram.png" class="rodape__icon"
+          alt="Instagram da Inova Makeup">
+        <img src="img/tiktok.png" class="rodape__icon"
+          alt="Tiktok da Inova Makeup">
+      </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-</body>
+      <ul class="rodape__lista">
+        <li><a href="#">Termos e condições</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Formas de Pagamento</a></li>
+      </ul>
+
+      <p class="rodape__container__texto">
+        © 2023 Inova Makeup. Todos os direitos reservados
+      </p>
+      <p class="rodape__container__texto">
+        Site desenvolvido com intuito de aprimorar conhecimentos!
+      </p>
+      <p class="rodape__container__texto">Images by Freepik</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 
 </html>
