@@ -33,9 +33,9 @@
           role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
+<<<<<<< HEAD
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Crie sua
-                  conta</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Fazer Login</h5>
               </div>
               <div class="modal-body">
                 <!--Formulario-->
@@ -43,10 +43,27 @@
                   <input type="email" class="form-control"
                     id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Email">
+=======
+              <form action="index.php" method="post">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Crie sua
+                    conta</h5>
+>>>>>>> cadc0ab9c32050533e0186f049ae38e5747d032e
                 </div>
-                <div class="form-group">
-                  <input type="password" class="form-control"
-                    id="exampleInputPassword1" placeholder="Senha">
+                <div class="modal-body">
+                  <!--Formulario-->
+                  <div class="form-group">
+                    <input type="email" class="form-control"
+                      id="exampleInputEmail1" name="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control"
+                      id="exampleInputPassword1" name="senha"
+                      placeholder="Senha">
+                  </div>
+                  <!--Fim do Formulario-->
                 </div>
                 <!--Fim do Formulario-->
               </div>
@@ -54,6 +71,7 @@
                 <button onclick="fecharModal()" type="button"
                   class="btn btn-primary">Avançar</button>
               </div>
+              <a class=" btn btn-primary sign-in" href="conta.html">Crie sua conta</a>
             </div>
           </div>
         </div>
