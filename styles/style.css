@@ -252,26 +252,32 @@
   --bs-btn-active-border-color: #E7CDC9;
 }
 
-.form-control {
-  background-color: #E7CDC9;
-  font-family: var(--fonte-primaria);
-  border: 0;
+
+.link-conta{
+  display: flex;
+  justify-content: center;
+  justify-items: center
 }
 
+.paragrafo-conta{
+  color: var(--cor-texto);
+  margin-right: 10px;
+  margin-bottom: 0;
+}
 
-.form-control::placeholder {
+.link{
+  text-decoration: underline;
+  font-weight: 600;
   color: var(--cor-listas);
-  font-style: italic;
 }
 
 
-.form-control:focus {
-  background-color: #E7CDC9;
-  outline: none;
-}
 
-.sign-up{
-  padding: 3em;
+.btn-close-modal {
+  border: 0;
+  position: absolute;
+  right: 0;
+  margin-right: 1em;
 }
 
 @media screen and (max-width: 768px) {

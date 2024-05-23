@@ -28,39 +28,45 @@
               src="img/person 1.png"
               class="icones" alt="Minha conta" /></button>
         </div>
-        <!--Modal-->
-        <div id="modal" class="modal fade" id="modalExemplo" tabindex="-1"
-          role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal -->
+        <div id="modal" class="modal fade" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Fazer Login</h5>
+                <h5 class="modal-title text-center" id="exampleModalLabel">Fazer
+                  Login</h5>
+                <button type="button" onclick="fecharModal()"
+                  class="close btn-close-modal ml-auto" data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
               <div class="modal-body">
-                  <!--Formulario-->
-                  <div class="form-group">
-                    <input type="email" class="form-control"
-                      id="exampleInputEmail1" name="email"
-                      aria-describedby="emailHelp"
-                      placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control"
-                      id="exampleInputPassword1" name="senha"
-                      placeholder="Senha">
-                  </div>
+                <!-- Formulário -->
+                <div class="form-group">
+                  <input type="email" class="form-control"
+                    id="exampleInputEmail1" name="email"
+                    aria-describedby="emailHelp" placeholder="Email">
                 </div>
-                <!--Fim do Formulario-->
+                <div class="form-group">
+                  <input type="password" class="form-control"
+                    id="exampleInputPassword1" name="senha" placeholder="Senha">
+                </div>
+                <div class="link-conta">
+                  <p class="paragrafo-conta">Ainda não possui conta? </p><a
+                    class="link" href="conta.html">Crie sua conta</a>
+                </div>
               </div>
+              <!-- Fim do Formulário -->
               <div class="modal-footer">
                 <button onclick="fecharModal()" type="button"
-                  class="btn btn-primary">Avançar</button>
+                  class="btn btn-primary btn-block">Avançar</button>
               </div>
-              <a class=" btn btn-primary sign-in" href="conta.html">Crie sua conta</a>
             </div>
           </div>
         </div>
-        <!--Fim do Modal-->
+        <!-- Fim do Modal -->
         <img src="img/wepik-organic-logo-20230519184815kCJF.png"
           class="icon-marca" alt="Logotipo Inova Makeup" />
         <a href="#"><img src="img/sacolas-de-compras 1.png" class="icones"
