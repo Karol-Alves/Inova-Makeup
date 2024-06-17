@@ -23,50 +23,8 @@
   <body id="body">
     <header class="cabecalho">
       <nav class="cabecalho__container">
-        <div class="icone-conta">
-          <button onclick="abrirModal()" href="#" id="icone-minha-conta"><img
-              src="img/person 1.png"
-              class="icones" alt="Minha conta" /></button>
-        </div>
-        <!-- Modal -->
-        <div id="modal" class="modal fade" tabindex="-1" role="dialog"
-          aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-center" id="exampleModalLabel">Fazer
-                  Login</h5>
-                <button type="button" onclick="fecharModal()"
-                  class="close btn-close-modal ml-auto" data-dismiss="modal"
-                  aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <!-- Formulário -->
-                <div class="form-group">
-                  <input type="email" class="form-control"
-                    id="exampleInputEmail1" name="email"
-                    aria-describedby="emailHelp" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control"
-                    id="exampleInputPassword1" name="senha" placeholder="Senha">
-                </div>
-                <div class="link-conta">
-                  <p class="paragrafo-conta">Ainda não possui conta? </p><a
-                    class="link" href="conta.html">Crie sua conta</a>
-                </div>
-              </div>
-              <!-- Fim do Formulário -->
-              <div class="modal-footer">
-                <button onclick="fecharModal()" type="button"
-                  class="btn btn-primary btn-block">Avançar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fim do Modal -->
+        <button onclick="abrirModal()" id="icone-minha-conta"><img
+            src="img/person 1.png" class="icones" alt="Minha conta"></button>
         <img src="img/wepik-organic-logo-20230519184815kCJF.png"
           class="icon-marca" alt="Logotipo Inova Makeup" />
         <a href="#"><img src="img/sacolas-de-compras 1.png" class="icones"
@@ -81,23 +39,55 @@
         <li><a href="#">Lábios</a></li>
       </ul>
     </header>
+
+    <!-- Modal -->
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Fazer
+              Login</h5>
+            <button type="button" onclick="fecharModal()" class="btn-close"
+              data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1"
+                name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control"
+                id="exampleInputPassword1" name="senha" placeholder="Senha">
+            </div>
+            <div class="link-conta">
+              <p class="paragrafo-conta">Ainda não possui conta? <a class="link"
+                  href="conta.html">Crie sua conta</a></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button onclick="fecharModal()" type="button"
+              class="btn btn-primary w-100">Avançar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do Modal -->
+
     <main class="apresentacao__container">
-      <!-- Inicio do carrousel Desktop-->
+      <!-- Início do carrossel Desktop -->
       <div id="carouselExampleIndicators" class="carousel slide"
-        data-bs-ride="carousel" data-interval="2000">
+        data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
+            data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
+            data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+            data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
+            data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -118,21 +108,19 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
+          data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
+          data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!--Fim do carrousel Desktop-->
+      <!-- Fim do carrossel Desktop -->
 
-      <!-- Inicio do carrousel Mobile-->
+      <!-- Início do carrossel Mobile -->
       <div id="carouselExample" class="carousel slide mobile">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -163,38 +151,24 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!--Fim do carrousel Mobile-->
+      <!-- Fim do carrossel Mobile -->
 
       <div class="apresentacao__container__produtos">
         <h2 class="titulo__produtos">Confira nossos produtos</h2>
         <ul class="lista__produtos">
-          <li class="lista__produtos__itens">
-            <a href="#">
-              <img src="img/Frame 8.png" alt="Corretivo líquido">
-            </a>
-          </li>
-          <li class="lista__produtos__itens">
-            <a href="#">
-              <img src="img/Frame 10.png" alt="Base">
-            </a>
-          </li>
-          <li class="lista__produtos__itens">
-            <a href="#">
-              <img src="img/Frame 9.png" alt="Paleta de sombras">
-            </a>
-          </li>
-          <li class="lista__produtos__itens">
-            <a href="#">
-              <img src="img/Frame 11.png" alt="Batom em bala">
-            </a>
-          </li>
-          <li class="lista__produtos__itens">
-            <a href="#">
-              <img src="img/Frame 13.png" alt="Pincel língua de gato">
-            </a>
-          </li>
+          <li class="lista__produtos__itens"><a href="#"><img
+                src="img/Frame 8.png" alt="Corretivo líquido"></a></li>
+          <li class="lista__produtos__itens"><a href="#"><img
+                src="img/Frame 10.png" alt="Base"></a></li>
+          <li class="lista__produtos__itens"><a href="#"><img
+                src="img/Frame 9.png" alt="Paleta de sombras"></a></li>
+          <li class="lista__produtos__itens"><a href="#"><img
+                src="img/Frame 11.png" alt="Batom em bala"></a></li>
+          <li class="lista__produtos__itens"><a href="#"><img
+                src="img/Frame 13.png" alt="Pincel língua de gato"></a></li>
         </ul>
       </div>
+
       <div class="apresentacao__container__peles">
         <h2 class="titulo__peles">Qual combina com você?</h2>
         <p class="texto__peles">Encontre as melhores maquiagens para o seu tom
@@ -210,10 +184,9 @@
               alt="Tom escuro"></a>
         </div>
       </div>
-
     </main>
-    <footer class="rodape__container">
 
+    <footer class="rodape__container">
       <div class="rodape__redes">
         <img src="img/facebook.png" class="rodape__icon"
           alt="Facebook da Inova Makeup">
@@ -222,7 +195,6 @@
         <img src="img/tiktok.png" class="rodape__icon"
           alt="Tiktok da Inova Makeup">
       </div>
-
       <ul class="rodape__lista">
         <li><a href="#">Termos e condições</a></li>
         <li><a href="#">Ajuda</a></li>
@@ -231,13 +203,10 @@
         <li><a href="#">Política de Privacidade</a></li>
         <li><a href="#">Formas de Pagamento</a></li>
       </ul>
-
-      <p class="rodape__container__texto">
-        © 2023 Inova Makeup. Todos os direitos reservados
-      </p>
-      <p class="rodape__container__texto">
-        Site desenvolvido com intuito de aprimorar conhecimentos!
-      </p>
+      <p class="rodape__container__texto">© 2023 Inova Makeup. Todos os direitos
+        reservados</p>
+      <p class="rodape__container__texto">Site desenvolvido com intuito de
+        aprimorar conhecimentos!</p>
       <p class="rodape__container__texto">Images by Freepik</p>
     </footer>
 
